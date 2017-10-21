@@ -15,14 +15,14 @@ public class BehaviorTree : MonoBehaviour {
         _dataStore = new Dictionary<string, System.Object>();
         _done = false;
 
-        Selector selector = new Selector();
+        //Selector selector = new Selector();
 
-        Node node = new ThreeTicksThenFail();
-        Inverter inverter = new Inverter();
-        inverter.Node = node;
-        selector.AddNode(inverter);
-        selector.AddNode(new ThreeTicksThenFail());
-        _root = selector;
+        //Node node = new ThreeTicksThenFail();
+        //Inverter inverter = new Inverter();
+        //inverter.Node = node;
+        //selector.AddNode(inverter);
+        //selector.AddNode(new ThreeTicksThenFail());
+        //_root = selector;
     }
 
     // Use this for initialization
