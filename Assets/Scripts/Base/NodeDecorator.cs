@@ -4,11 +4,15 @@ using UnityEngine;
 
 public abstract class NodeDecorator : Node
 {
-    protected Node _node;
-    public Node Node { set { _node = value; } }
+    public Node node { get; protected set; }
+ 
+    public NodeDecorator(Node node)
+    {
+        this.node = node;
+    }
 
     public override void Init()
     {
-        _node.Init();
+        node.Init();
     }
 }
